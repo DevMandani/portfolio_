@@ -13,13 +13,13 @@
     
 
 </head>
-<body>
+<body style="background-color: rgb(4, 63, 58);">
     
-    <!-- <div class="reloade position-fixed w-100 text-bg-info z-3 top-0 start-0"  id="reloade" style="height: 100vh;width:100%;">
+     <div class="reloade position-fixed w-100 text-bg-info z-3 top-0 start-0"  id="reloade" style="height: 100vh;width:100%;">
         <div class=" position-absolute top-50 start-50 translate-middle"  role="status">
             <span class=" img-fluid">
                 <p class=" text-center">
-                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTFvbXdqYmV2bXVzaGR6bmY0ejRtYzg0YzdrYnpiMnloemN0cWd1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" class="rounded" height="200px" width="200px" alt="">
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTFvbXdqYmV2bXVzaGR6bmY0ejRtYzg0YzdrYnpiMnloemN0cWd1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" class="rounded-circle" height="200px" width="200px" alt="">
                 </p>
                 <span class="text-center text-white text-center fs-2 fw-bold animate__animated animate__zoomIn " >
                     <div class="typing-demo">
@@ -28,7 +28,7 @@
                 </span>
             </span>
         </div>
-    </div> -->
+    </div> 
 
     <!-- navbar section start -->
     <header>
@@ -42,11 +42,11 @@
                 </button>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold">Home</a></li>
-                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold">About</a></li>
-                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold">Projects</a></li>
+                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">About</a></li>
+                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">Home</a></li>
+                        <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">Projects</a></li>
                        
-                        <li class="nav-item fw-semibold"><a href="" class="nav-link">Contact</a></li>
+                        <li class="nav-item fw-semibold"><a href="" class="nav-link text-white">Contact</a></li>
                     </ul>
                 </div>
 
@@ -64,47 +64,63 @@
     <!-- about me section started -->
 
 
-    <section>
-        <section class="about-section" style=" background-color: #FF3CAC;
-        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-        ;">
+    <div class="container-fluid">
+        <section id="about-section" class="p-100 pb-2 bg-one-dark">
             <div class="container">
-                <div class="row clearfix">
-                    
-                      <!--Content Column-->
-                      <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                        <div class="inner-column">
-                            <div class="sec-title">
-                              <div class="title">About Me!</div>
-                                <h2>I am a front-end devloper!</h2>
-                              </div>
-                                <div class="text-1"><div class="text fw-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div></div>
-                              
-                              
-                              <a href="about.html" class="theme-btn btn-style-three">Hire Me!</a>
-                          </div>
-                      </div>
-                      
-                      <!--Image Column-->
-                      <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                        <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="image">
-                                <img src="img/myphoto.jpeg" alt="">
-                                
-                              </div>
-                          </div>
-                      </div>
-                      
+              <div class="row d-flex align-items-center">
+                <div class="col-md-6 text-center">
+                  <img src="img/myimg.jpeg" alt="Signature" height="350px" width="350px" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                  <p class="color-base">ABOUT US!</p>
+                  <h2 class="text-white mb-4">My Real Life is Up to You? I am a <span class="color-base"><div class="typing-demo">
+                   Front-End Developer!
+                </div></span>
+                  </h2>
+                  <p>I’m a Front-end Developer and graphic designer living in India. I spend my days with my hands in many different areas of UI development from back end programming to front end engineering.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6 about-bullet">
+                      <ul class="bullet-check">
+                        <li>Different of web development</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 about-bullet">
+                      <ul class="bullet-check">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                      </ul>
+                    </div>
                   </div>
+        
+                  <div class="wrap-button mt-50">
+                    <a href="#" class="btn btn-medium btn-inline btn-fill mr-4">Cv Download</a>
+                  </div>
+                </div>
               </div>
+        
+            </div>
           </section>
-      
-      
-      
-    </section>
+       
+    </div>
+
+              
+
 
 
     <!-- about me section ended -->
+
+
+    <!-- skill section started -->
+
+<section class="my-5">
+
+
+</section>
+
+    <!-- skill section ended -->
 
     <script src="index.js"></script>
     <script src="bootstrap.bundle.min.js"></script>

@@ -27,164 +27,197 @@
   }
   
 .dark-mode {
-    background-color: black;
-    color: white !important ;
+    background-color: white;
+    color: black !important ;
   }
 
 
 
-  
-.about-section{
-  position:relative;
-  padding:120px 0px;
-}
-
-.about-section .content-column{
-  position:relative;
-  margin-bottom:40px;
-}
-
-.about-section .content-column .inner-column{
-  position:relative;
-  padding-top:50px;
-  padding-right:100px;
-}
-
-.about-section .content-column .text{
-  position:relative;
-  
-  font-size:15px;
-  line-height:2em;
-  margin-bottom:40px;
-}
-
-.about-section .content-column .email{
-  position:relative;
-  color:#252525;
-  font-weight:700;
-  margin-bottom:50px;
-}
-
-.about-section .image-column{
-  position:relative;
-  margin-bottom:50px;
-}
-
-.about-section .image-column .inner-column{
-  position:relative;
-  padding:40px 40px 0px 0px;
-  margin-left:50px;
-}
-
-.about-section .image-column .inner-column:after{
-  position:absolute;
-  content:'';
-  right:0px;
-  top:0px;
-  left:40px;
-  bottom:100px;
-  z-index:-1;
-  border:2px solid #d7a449;
-}
-
-.about-section .image-column .inner-column .image{
-  position:relative;
-}
-
-.about-section .image-column .inner-column .image:before{
-  position:absolute;
-  content:'';
-  left:-50px;
-  bottom:-50px;
-  width:299px;
-  height:299px;
- 
-}
-
-.about-section .image-column .inner-column .image img{
-  position:relative;
-  width:100%;
-  display:block;
-}
-
-
-
-.about-section .btn-style-three:before {
-    position: absolute;
-    content: '';
-    left: 10px;
-    top: 10px;
-    z-index: -1;
-    right: -10px;
-    bottom: -10px;
-    background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
-}
-.about-section .btn-style-three:hover {
-    color: #ffffff;
-    background: #d7a449;
-}
-.about-section .btn-style-three {
-    position: relative;
-    line-height: 24px;
-    color: #252525;
-    font-size: 15px;
-    font-weight: 700;
-    background: none;
-    display: inline-block;
-    padding: 11px 40px;
-    background-color: #ffffff;
-    text-transform: capitalize;
-    border: 2px solid #d7a449;
-    font-family: 'Arimo', sans-serif;
-}
-.sec-title2{
-  color:#fff;
-}
-.sec-title {
-    position: relative;
-    padding-bottom: 40px;
-}
-.sec-title .title {
-    position: relative;
-    color: #d7a449;
-    font-size: 18px;
-    font-weight: 700;
-    padding-right: 50px;
-    margin-bottom: 15px;
-    display: inline-block;
-    text-transform: capitalize;
-}
-.sec-title .title:before {
-    position: absolute;
-    content: '';
-    right: 0px;
-    bottom: 7px;
-    width: 40px;
-    height: 1px;
-    background-color: #bbbbbb;
-}
-
-
-
 body.dark-mode {
-  background-color: rgb(108, 117, 125);
-  color: white;
+  background-color:white;
+  color: black;
 }
 body.dark-mode .navbar {
-  background-color: rgb(108, 117, 125);
+  background-color:white;
 }
 body.dark-mode .navbar .nav-link, body.dark-mode .navbar .navbar-brand {
-  color: white !important;
+  color: black !important;
 }
 
 
 body.dark-mode .navbar-toggler {
-  border-color: white;
+  border-color: black;
 }
 body.dark-mode .navbar-toggler-icon {
   background-color: white;
 }
 
-body.about-section.inner-column.text::after{
-  color: white !important;
+
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #afb4b9;
+  font-weight: normal;
+}
+a {
+  color: #ffde00;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-offset: 0;
+}
+a:hover {
+  color: #fabf15;
+}
+i {
+  vertical-align: middle;
+}
+ul {
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.color-base {
+  color: #fabf15;
+}
+.bg-one-dark {
+  background: #043f3a !important;
+}
+.p-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.btn {
+  text-transform: uppercase;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn-medium {
+  font-family: "Rubik", sans-serif;
+  background: transparent;
+  color: #fabf15;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 45px;
+  border-radius: 4px;
+  border: 1px solid #fabf15;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn-medium:hover {
+  background: #fabf15;
+  color: #222;
+  -webkit-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+}
+.btn-fill {
+  background: #fabf15 !important;
+  color: #222 !important;
+}
+.btn-fill:hover {
+  background: #ffb400;
+  border-color: #ffb400;
+}
+.about-info {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#about-section img {
+  position: relative;
+  z-index: 1;
+}
+.inline-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.bullet-check li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.bullet-check li:last-child {
+  padding-bottom: 0;
+}
+.bullet-check li:before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  left: 0;
+}
+
+/*! responsive */
+@media (max-width: 480px) {
+  .about-info-wrap {
+    padding: 10px !important;
+    margin-top: 30px;
+  }
+  .about-info {
+    padding: 30px !important;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
+  .wrap-button img {
+    margin-top: 20px;
+  }
+  .about-info-wrap {
+    padding: 10px !important;
+    margin-top: 30px;
+  }
+  .about-info {
+    padding: 30px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+  }
+  .wrap-button img {
+    margin-top: 20px;
+  }
+  .about-bullet {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .about-info-wrap {
+    padding: 10px !important;
+    margin-top: 30px;
+  }
+  .about-info {
+    padding: 30px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-bullet {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
