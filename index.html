@@ -7,15 +7,18 @@
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    
+    <link rel="stylesheet" href="media.css">
 
 </head>
 <body style="background-color: rgb(4, 63, 58);">
-    
-     <div class="reloade position-fixed w-100 text-bg-info z-3 top-0 start-0"  id="reloade" style="height: 100vh;width:100%;">
+   
+     <!-- <div class="reloade position-fixed w-100 text-bg-info z-3 top-0 start-0"  id="reloade" style="height: 100vh;width:100%;">
         <div class=" position-absolute top-50 start-50 translate-middle"  role="status">
             <span class=" img-fluid">
                 <p class=" text-center">
@@ -28,7 +31,7 @@
                 </span>
             </span>
         </div>
-    </div> 
+    </div>   -->
 
     <!-- navbar section start -->
     <header>
@@ -41,7 +44,7 @@
                     <span><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="navbar-collapse collapse" id="navbar">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">About</a></li>
                         <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">Home</a></li>
                         <li class="nav-item fs-bold"><a class="nav-link fw-semibold text-white">Projects</a></li>
@@ -50,10 +53,10 @@
                     </ul>
                 </div>
 
-                <div class="d-flex" style="column-gap: 10px;">
-                    <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
-                    <button onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
-                </div>
+                  <!-- <div class="d-flex" style="column-gap: 10px;">
+                      <button onclick="lightMode()"><i class="fa-solid fa-moon"></i></button>
+                      <button onclick="darkMode()"><i class="fa-solid fa-sun"></i></button>
+                  </div> -->
             </div>
         </nav>
     </header>
@@ -64,16 +67,16 @@
     <!-- about me section started -->
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: rgb(4, 63, 58);">
         <section id="about-section" class="p-100 pb-2 bg-one-dark">
             <div class="container">
               <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center">
-                  <img src="img/myimg.jpeg" alt="Signature" height="350px" width="350px" class="img-fluid rounded-circle">
+                  <img src="img/my2.jpeg" alt="Signature" height="500px" width="500px" class="img-fluid rounded border-glow">
                 </div>
                 <div class="col-md-6">
                   <p class="color-base">ABOUT US!</p>
-                  <h2 class="text-white mb-4">My Real Life is Up to You? I am a <span class="color-base"><div class="typing-demo">
+                  <h2 class="text-white mb-4">My Real Life is Up to You? I am  <span class="color-base"><div class="typing-demo">
                    Front-End Developer!
                 </div></span>
                   </h2>
@@ -114,11 +117,141 @@
 
 
     <!-- skill section started -->
+<section>
 
-<section class="my-5">
+  <div class="container my-4">
 
+    <p class="text-center text-center fs-2 fw-bold text-white text-decoration-underline">Skills</p>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInLeft border-warning border-2">
+          
+          <p class=""> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/c++.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
 
-</section>
+              <p class="name text-center fw-bold fs-3 ps-4">C++</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInUp border-warning border-2">
+          
+          <p> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/CSS3_logo.svg.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
+
+              <p class="name text-center fw-bold fs-3 ps-4">CSS</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-4  col-sm-6 border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInRight border-warning border-2">
+          
+          <p> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/html-5.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
+
+              <p class="name text-center fw-bold fs-3 ps-4">HTML</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInLeft   border-warning border-2">
+          
+          <p> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/java script 1.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
+          
+          <p class="name text-center fw-bold fs-3 ps-4">JAVA SCRIPT</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInUp  border-warning border-2">
+          
+          <p> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/java.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
+          
+          <p class="name text-center fw-bold fs-3 ps-4">JAVA</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
+        <div class="border-glow1 animate__animated animate__fadeInRight border-warning border-2">
+          
+          <p> <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> <img src="img/jquery.png" class="img-fluid" height="50px" width="50px" alt=""> </div>
+            </div>
+          </div></p>
+
+              <p class="name text-center fw-bold fs-3 ps-4">JQUERY</p>
+
+            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
     <!-- skill section ended -->
 
