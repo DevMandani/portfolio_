@@ -145,9 +145,12 @@ li {
 .about-info {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
+
+
 #about-section img {
-  position: relative;
+  
   z-index: 1;
+
 }
 .inline-social ul li {
   display: inline-block;
@@ -223,10 +226,10 @@ li {
 }
 
 
-.border-glow{
-  -webkit-box-shadow:0px 0px 10px 0px rgba(255,255,255,0.9);
--moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
+.border-glow {
+  border: 4px solid;
+  border-color: rgb(0, 255, 255); /* Cyan color */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Glow effect */
 }
 
 
@@ -300,9 +303,11 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
 }
 
 .border-glow1{
-  -webkit-box-shadow:0px 0px 28px 0px rgba(0,0,0,0.9);
--moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.9);
-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.9);
+  -webkit-box-shadow:0px 0px 24px 0px rgba(78,0,130,0.9);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(78,0,130,0.9);
+  box-shadow: 0px 0px 24px 0px rgba(78,0,130,0.9);
+
+
 }
 
 .animation:hover{ 
@@ -361,3 +366,28 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
   right: 0;
 }
 
+.background{
+  background-color: rgb(4, 63, 58);
+}
+
+
+#about-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(4, 3, 46, 0.9), rgba(0, 255, 255, 0.6)); /* Gradient */
+  background-image: url('path_to_your_image.jpg'); /* Replace with your image */
+  background-size: cover; /* Make sure the image covers the section */
+  background-position: center;
+  padding: 100px 0; /* Adjust padding */
+  color: white; /* Text color */
+  z-index: 1; /* Ensure content stays above particles */
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 0;
+  z-index: -1; /* Particles behind content */
+}
