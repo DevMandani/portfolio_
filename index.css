@@ -279,7 +279,7 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
 
 .mask.full,
 .circle .fill {
-  animation: fill ease-in-out 3s;
+  animation: fill ease-in-out 5s;
   transform: rotate(180deg);
 }
 
@@ -304,3 +304,60 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
 -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.9);
 box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.9);
 }
+
+.animation:hover{ 
+  animation: fill ease-in-out 5s;
+  transform: scale(1.2) ;
+}
+
+.hover:hover{
+  -webkit-box-shadow:0px 0px 10px 0px rgba(255,255,255,0.9);
+-moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
+box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
+
+}
+
+
+
+
+
+.button {
+  border-radius: 4px;
+  background-color:#ffb400;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
