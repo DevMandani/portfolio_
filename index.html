@@ -15,7 +15,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="media.css">
+    
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+
+<link rel="stylesheet" href="slick-theme.css">
+<link rel="stylesheet" href="slick.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body style="background-color: rgb(4, 3, 46);">
    
@@ -23,20 +30,20 @@
 
 
 </style>
-     <div class="reloade position-fixed w-100 text-bg-info z-3 top-0 start-0"  id="reloade" style="height: 100vh;width:100%;">
-        <div class=" position-absolute top-50 start-50 translate-middle"  role="status">
-            <span class=" img-fluid">
-                <p class=" text-center">
-                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTFvbXdqYmV2bXVzaGR6bmY0ejRtYzg0YzdrYnpiMnloemN0cWd1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" class="rounded-circle" height="200px" width="200px" alt="">
-                </p>
-                <span class="text-center text-white text-center fs-2 fw-bold animate__animated animate__zoomIn " >
-                    <div class="typing-demo">
-                        Welcome to my portfolio.
-                    </div>
-                </span>
-            </span>
-        </div>
-    </div>   
+<div class="reloade position-fixed w-100 text-bg-primary z-3 top-0 start-0" id="reloade" style="height: 100vh;width:100%;background: linear-gradient(135deg, #6e7dff, #6e8efc);">
+  <div class="position-absolute top-50 start-50 translate-middle" role="status">
+      <span class="img-fluid">
+          <p class="text-center">
+              <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTFvbXdqYmV2bXVzaGR6bmY0ejRtYzg0YzdrYnpiMnloemN0cWd1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" class="rounded-circle" height="200px" width="200px" alt="">
+          </p>
+          <span class="text-center text-white fs-1 fw-bold animate__animated animate__zoomIn" style="animation-duration: 1.5s;">
+              <div class="typing-demo" style="font-family: 'Courier New', Courier, monospace; color: #fff; font-weight: 700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                  Welcome to my portfolio.
+              </div>
+          </span>
+      </span>
+  </div>
+</div> 
 
     <!-- navbar section start -->
     <header>
@@ -80,7 +87,9 @@
               <h2 class="text-white mb-4">
                 My Real Life is Up to You? I am 
                 <span class="color-base">
-                  <div class="typing-demo">Front-End Developer!</div>
+                  <div class="neon-container">
+                    <h1 class="neon-text">Front-End Developer!</h1>
+                </div>
                 </span>
               </h2>
               <p>I’m a Front-end Developer and graphic designer living in India. I spend my days with my hands in many different areas of UI development from back end programming to front end engineering.</p>
@@ -122,7 +131,7 @@
     <p class="text-center text-center fs-2 fw-bold text-white text-decoration-underline">Skills</p>
     <div class="row">
       <div class="col-lg-4 col-sm-6   border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInLeft border-warning border-2">
+        <div class="border-glow1 hover border-warning border-2" data-aos="fade-right" data-aos-duration="1000">
           
           <p class=""> <div class="circle-wrap">
             <div class="circle">
@@ -142,13 +151,13 @@
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
             
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+           
         </div>
       </div>
       <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInUp border-warning border-2">
+        <div class="border-glow1 hover  border-warning border-2" data-aos="fade-down"
+      
+        data-aos-duration="1000">
           
           <p> <div class="circle-wrap">
             <div class="circle">
@@ -165,14 +174,12 @@
               <p class="name text-center fw-bold fs-3 ps-4">CSS</p>
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+            
 
         </div>
       </div>
       <div class="col-lg-4  col-sm-6 border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInRight border-warning border-2">
+        <div class="border-glow1 hover  border-warning border-2" data-aos="fade-left" data-aos-duration="1000">
           
           <p> <div class="circle-wrap">
             <div class="circle">
@@ -189,14 +196,12 @@
               <p class="name text-center fw-bold fs-3 ps-4">HTML</p>
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+           
 
         </div>
       </div>
       <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInLeft   border-warning border-2">
+        <div class="border-glow1 hover   border-warning border-2" data-aos="fade-right" data-aos-duration="1000">
           
           <p> <div class="circle-wrap">
             <div class="circle">
@@ -213,14 +218,14 @@
           <p class="name text-center fw-bold fs-3 ps-4">JAVA SCRIPT</p>
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+           
 
         </div>
       </div>
       <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInUp  border-warning border-2">
+        <div class="border-glow1 hover  border-warning border-2" data-aos="fade-down"
+      
+        data-aos-duration="1000">
           
           <p> <div class="circle-wrap">
             <div class="circle">
@@ -237,14 +242,14 @@
           <p class="name text-center fw-bold fs-3 ps-4">JAVA</p>
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+           
 
         </div>
       </div>
       <div class="col-lg-4 col-sm-6  border-danger border-2 p-3">
-        <div class="border-glow1 hover animate__animated animate__fadeInRight border-warning border-2">
+        <div class="border-glow1 hover  border-warning border-2" data-aos="fade-left"
+      
+        data-aos-duration="1000">
           
           <p> <div class="circle-wrap">
             <div class="circle">
@@ -261,9 +266,7 @@
               <p class="name text-center fw-bold fs-3 ps-4">JQUERY</p>
 
             <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aliquam.</p>
-            <p class="text-center">
-              <button class="button"><span>Read More </span></button>
-            </p>
+          
 
         </div>
       </div>
@@ -276,91 +279,137 @@
 
 
     <!-- project section started -->
-    <section class="py-3">
-      <p class="text-center fs-2 fw-bold text-white text-decoration-underline">Projects</p>
-      <div class="container">
-        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- First Item -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
+
+    <section>
+      <h2 class="text-center" style="color: darkorange;">My project</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/project 1.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
                 </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/furniture.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Login Form.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
-                </div>
-              
+                <p class="ps-2 fs-3 fw-bold text-white">Food Site</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
               </div>
             </div>
-            <!-- Second Item -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/project 1.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/furniture.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
                 </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Furniture</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/Login Form.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
                 </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4" autoplay class="img-fluid hover-effect"></video>
-                  </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Login Form</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
                 </div>
-               
+                <p class="ps-2 fs-3 fw-bold text-white">Portfolio</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/Rasturant - Google Chrome 2025-02-05 07-50-03.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
+                </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Resturant</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/new project.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
+                </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Jubelee</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/project 2.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
+                </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Nifty</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4  border-danger border-2 p-2 ">
+              <div class="border1 border-warning rounded  new-glow">
+                <div class="video-container p-2">
+                  <video src="vedio/project5.mp4"  data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded" autoplay loop></video>
+                </div>
+                <p class="ps-2 fs-3 fw-bold text-white">Admin Penal</p>
+                <p class="ps-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum?</p>
+                <p class="text-center justify-content-center d-flex p-2" style="column-gap: 20px;">
+                  <button class="button btn btn-outline-warning"><span>View</span></button>
+                  <a href="https://github.com/DevMandani" class="a-link">
+                    <button class="button btn btn-outline-warning"><span>Github</span></button>
+                  </a>
+                </p>
               </div>
             </div>
 
-
-            <!-- third Item -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/project 1.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4" loop autoplay class="img-fluid hover-effect"></video>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 p-2">
-                  <div class="video-container border-danger border-2">
-                    <video src="vedio/Portfolio - Google Chrome 2025-02-05 07-47-48.mp4" autoplay class="img-fluid hover-effect"></video>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
-            <!-- Add more carousel items if needed -->
-          </div>
-          <!-- Carousel controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden border-danger">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
+        </div>
     </section>
-        <!-- project section ended -->
+
+<!-- project section ended -->
 
 
     <!-- contect section started -->
@@ -419,8 +468,21 @@
 
     <!-- contect section ended -->
 
+
+
+    <!-- reviwe section started -->
+
+    <!-- reviwe section ended -->
+
     <script src="index.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+   <script src="jquery-3.7.1.min.js"></script>
+   <script src="slick.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <script>
+    AOS.init();
+  </script>
+    <script src="./slick.min.js"></script>
 
    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
@@ -435,14 +497,14 @@
             document.body.classList.remove('dark-mode');
         }
     </script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value":110, 
+        "value":130, 
         "density": {
           "enable": true,
           "value_area": 800
