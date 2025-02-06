@@ -63,27 +63,56 @@
   }
 }
 
+
+.reloade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .typing-demo {
-    width: 24ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 1em;
+  width: 24ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1em;
   }
   
   @keyframes typing {
     from {
-      width: 0
+        width: 0;
     }
-  }
-      
-  @keyframes blink {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCaret {
     50% {
-      border-color: transparent
+        border-color: transparent;
     }
+}
+
+
+
+
+.neon-text {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
   }
+  100% {
+      text-shadow: 0 0 10px #fffb00, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+  }
+}
+
 
   body{
     background-color: white;
@@ -386,50 +415,6 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
 
 }
 
-
-
-
-
-.button {
-  border-radius: 4px;
-  background-color:#ffb400;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 .background{
   background-color: rgb(4, 63, 58);
 }
@@ -454,26 +439,6 @@ box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.9);
   top: 100px;
   left: 0;
   z-index: -1; /* Particles behind content */
-}
-
-
-.video-container {
-    border-radius: 10px; 
-    overflow: hidden; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  
-box-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.6);
-}
-
-.video-container:hover {
-    transform: scale(1.05); 
- 
-}
-
-.video-container video {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
 }
 
 
@@ -592,44 +557,51 @@ textarea {
   background: #00ffcc;
 }
 
-/* Confirmation Message Styling */
-.confirmation-message {
-  background-color: rgba(0, 255, 0, 0.1);
-  color: #00ff00;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1.2em;
-  text-align: center;
-  display: none;
+
+
+.b{
+  background-color: transparent;
+}
+
+.new-glow{
+ 
+  border-color: rgb(2, 255, 255); /* Cyan color */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow effect */
+
+}
+
+
+.border2 {
+ 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft shadow around the borders */
 }
 
 
 
-.video-container {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-  width: 100%;
-}
-
-.video-container video {
-  transition: transform 0.3s ease;
-}
-
-.video-container:hover video {
-  transform: scale(1.05); 
-}
 
 
-.carousel-control-prev-icon{
-  border: 2px solid #f80e0e;
-  background-color: #f80e0e;
-  border-radius: 20px;
+
+
+
+/* Styling for links inside buttons */
+.a-link:hover {
+  text-decoration: none; /* Remove underline from the link */
 }
-.carousel-control-next-icon{
-  border: 2px solid #f80e0e;
-  background-color: #f80e0e;
-  border-radius: 20px;
-  
+
+/* Add some margin and padding to make content more readable */
+.ps-2 {
+  padding-left: 1rem;
+}
+
+.fs-3 {
+  font-size: 1.25rem; /* Adjust font size for heading */
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* For the border of individual cards */
+.border-warning {
+  border-color: #f39c12; /* Light yellow border */
 }
